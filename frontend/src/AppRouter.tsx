@@ -8,7 +8,7 @@ function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={
+                <Route path="" element={
                     <Homepage/>
                 }/>
                 
