@@ -19,7 +19,10 @@ import TagFacesIcon from "@mui/icons-material/TagFaces";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
-const drawerWidth = 240;
+const style = {
+    background: "#02142B",
+};
+const drawerWidth = 200;
 
 function Navbar() {
     const [open, setOpen] = React.useState(true);
@@ -30,7 +33,7 @@ function Navbar() {
 
     return (
         <Box sx={{ display: "flex" }}>
-            <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+            <AppBar position="fixed" sx={{ ...style, zIndex: (theme) => theme.zIndex.drawer + 1 }}>
                 <Toolbar>
                     <Typography variant="h6" noWrap component="div">
                         Temp Header
@@ -44,6 +47,11 @@ function Navbar() {
                     width: drawerWidth,
                     flexShrink: 0,
                     [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: "border-box" },
+                }}
+                PaperProps={{
+                    sx: {
+                        backgroundColor: "#4EBFD4",
+                    },
                 }}>
                 <Toolbar />
                 <Box sx={{ overflow: "auto" }}>
