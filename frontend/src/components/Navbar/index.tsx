@@ -20,10 +20,15 @@ import Toolbar from "@mui/material/Toolbar";
 const drawerWidth = 200;
 
 function Navbar() {
-    const [open, setOpen] = React.useState(true);
+    const [openBookTab, setOpenBookTab] = React.useState(true);
+    const [openChapterTab, setOpenChapterTab] = React.useState(false);
 
-    const handleClick = () => {
-        setOpen(!open);
+    const handleBookClick = () => {
+        setOpenBookTab(!openBookTab);
+    };
+
+    const handleChapterClick = () => {
+        setOpenChapterTab(!openChapterTab);
     };
 
     return (
@@ -63,11 +68,15 @@ function Navbar() {
                                     </Link>
                                 }
                             />
-                            {open ? <ExpandLess onClick={handleClick} /> : <ExpandMore onClick={handleClick} />}
+                            {openBookTab ? (
+                                <ExpandLess onClick={handleBookClick} />
+                            ) : (
+                                <ExpandMore onClick={handleBookClick} />
+                            )}
                         </ListItemButton>
                     </ListItem>
 
-                    <Collapse in={open} timeout="auto" unmountOnExit>
+                    <Collapse in={openBookTab} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                             <ListItemButton sx={{ pl: 4 }}>
                                 <ListItemIcon>
@@ -80,11 +89,30 @@ function Navbar() {
                                         </Link>
                                     }
                                 />
+                                {openChapterTab ? (
+                                    <ExpandLess onClick={handleChapterClick} />
+                                ) : (
+                                    <ExpandMore onClick={handleChapterClick} />
+                                )}
                             </ListItemButton>
                         </List>
+                        <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemText
+                                        primary={
+                                            // Link to content page and correct section there
+                                            <Link to="/genki/1" style={{ textDecoration: "none", color: "black" }}>
+                                                Chapter 1
+                                            </Link>
+                                        }
+                                    />
+                                </ListItemButton>
+                            </List>
+                        </Collapse>
                     </Collapse>
 
-                    <Collapse in={open} timeout="auto" unmountOnExit>
+                    <Collapse in={openBookTab} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                             <ListItemButton sx={{ pl: 4 }}>
                                 <ListItemIcon>
