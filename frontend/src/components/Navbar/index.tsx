@@ -73,7 +73,13 @@ function Navbar() {
                                 <ListItemIcon>
                                     <BookIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Genki I" />
+                                <ListItemText
+                                    primary={
+                                        <Link to="/genki/1" style={{ textDecoration: "none", color: "black" }}>
+                                            Genki I
+                                        </Link>
+                                    }
+                                />
                             </ListItemButton>
                         </List>
                     </Collapse>
@@ -84,7 +90,13 @@ function Navbar() {
                                 <ListItemIcon>
                                     <BookIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Genki II" />
+                                <ListItemText
+                                    primary={
+                                        <Link to="/genki/2" style={{ textDecoration: "none", color: "black" }}>
+                                            Genki II
+                                        </Link>
+                                    }
+                                />
                             </ListItemButton>
                         </List>
                     </Collapse>
