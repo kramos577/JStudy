@@ -51,13 +51,19 @@ function Navbar() {
                         </ListItemButton>
                     </ListItem>
 
-                    <ListItem key="genki" disablePadding onClick={handleClick}>
-                        <ListItemButton component={Link} to="/genki">
+                    <ListItem key="genki" disablePadding>
+                        <ListItemButton>
                             <ListItemIcon>
                                 <TagFacesIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Genki" />
-                            {open ? <ExpandLess /> : <ExpandMore />}
+                            <ListItemText
+                                primary={
+                                    <Link to="/genki" style={{ textDecoration: "none", color: "black" }}>
+                                        Genki
+                                    </Link>
+                                }
+                            />
+                            {open ? <ExpandLess onClick={handleClick} /> : <ExpandMore onClick={handleClick} />}
                         </ListItemButton>
                     </ListItem>
 
