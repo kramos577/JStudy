@@ -57,7 +57,7 @@ let genki1_content = [
                 kana: "〜さい",
             },
             {
-                english: "Mr./Ms....",
+                english: "Mr./Ms. ...",
                 romaji: "...san",
                 kana: "〜さん",
             },
