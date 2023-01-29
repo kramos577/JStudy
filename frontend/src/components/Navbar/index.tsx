@@ -102,7 +102,9 @@ function Navbar() {
                                     <ListItemText
                                         primary={
                                             // Link to content page and correct section there
-                                            <Link to="/genki/1" style={{ textDecoration: "none", color: "black" }}>
+                                            <Link
+                                                to="/genki/1/study"
+                                                style={{ textDecoration: "none", color: "black" }}>
                                                 Chapter 1
                                             </Link>
                                         }

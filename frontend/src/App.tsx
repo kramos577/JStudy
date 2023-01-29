@@ -8,6 +8,7 @@ import Genki2 from "./pages/Genki2";
 import Header from "./components/Header";
 import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
+import Genki1Study from "./pages/Genki1Study";
 
 // Router should live in app since I'm not doing any complicated routing
 // Navbar needs to be in browser router because of all routing must happen in a routing
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/genki" element={<Genki />} />
                     <Route path="/genki/1" element={<Genki1 />} />
                     <Route path="/genki/2" element={<Genki2 />} />
+                    <Route path="/genki/1/study" element={<Genki1Study />} />
                 </Routes>
             </BrowserRouter>
         </div>
