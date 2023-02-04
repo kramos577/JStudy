@@ -304,10 +304,36 @@ let genki1_content = [
         ],
         grammar: [
             {
-                title: "~tara",
-                usage: "if and when",
-                notes: "this is a grammar",
-                examples: "Examples to come soon",
+                title: "XはYです",
+                meanings: [
+                    { english: "X is/am/are Y.", japanese: "X は Y です." },
+                    { english: "As for X, it is Y.", japanese: "X は Y です" },
+                    { english: "It is ~", japanese: "~です" },
+                ],
+                usages: ["Subject は N/Adj です"],
+                notes: [
+                    "Often in Japanese, subjects are dropped. Japanese speakers tend to omit subjects whenever they think it is clear to the listener what or who they are referring to.",
+                ],
+                examples: ["Examples to come"],
+            },
+            {
+                title: "Question Sentences",
+                meanings: [{ english: "~?", japanese: "~か" }],
+                usages: ["Sentence + か"],
+                notes: ["It is not customary to write a question mark at the end of question sentence in Japanese"],
+                examples: ["Examples to come"],
+            },
+            {
+                title: "nounのnoun",
+                meanings: [
+                    { english: "X's Y.", japanese: "X の Y" },
+                    { english: "X Y.", japanese: "X の Y" },
+                ],
+                usages: ["N の N", "Specific Noun の Generic N"],
+                notes: [
+                    "This phrase acts more or less like one big noun, and it can be put wherever a noun can be used",
+                ],
+                examples: ["Examples to come"],
             },
         ],
     },
