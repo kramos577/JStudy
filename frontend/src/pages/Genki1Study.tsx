@@ -21,10 +21,11 @@ function Genki1Study() {
                             <Grid container spacing={2}>
                                 {x.vocabulary.map((y) => (
                                     <Grid item>
-                                        <Card sx={{ width: 200 }}>
+                                        <Card sx={{ width: 220 }}>
                                             <CardContent>
                                                 <Typography>{y.english}</Typography>
                                                 <Typography>{y.kana}</Typography>
+                                                {/* <Typography>{y?.kanji}</Typography> */}
                                                 <Typography>{y?.romaji}</Typography>
                                             </CardContent>
                                         </Card>

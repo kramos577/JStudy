@@ -112,6 +112,22 @@ function Navbar() {
                                 </ListItemButton>
                             </List>
                         </Collapse>
+                        <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
+                            <List component="div" disablePadding>
+                                <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemText
+                                        primary={
+                                            // Link to content page and correct section there
+                                            <Link
+                                                to="/genki/1/study"
+                                                style={{ textDecoration: "none", color: "black" }}>
+                                                Chapter 2
+                                            </Link>
+                                        }
+                                    />
+                                </ListItemButton>
+                            </List>
+                        </Collapse>
                     </Collapse>
 
                     <Collapse in={openBookTab} timeout="auto" unmountOnExit>
