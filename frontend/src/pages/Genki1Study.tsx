@@ -1,12 +1,15 @@
 import { Box, Card, CardContent, Grid, Toolbar, Typography } from "@mui/material";
-import genki1_content from "../content/genki/genki1";
+import contentCh1 from "../content/genki/genki1/ch1";
+import contentCh2 from "../content/genki/genki1/ch2";
+
+const contentGenki1 = [contentCh1, contentCh2];
 
 function Genki1Study() {
     return (
         <div>
             <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
                 <Toolbar />
-                {genki1_content.map((x) => (
+                {contentGenki1.map((x) => (
                     <Box ml={25}>
                         <Typography variant="h3" align="left" sx={{ color: "#534D8A" }}>
                             {x.chapter}
