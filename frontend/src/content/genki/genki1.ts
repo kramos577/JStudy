@@ -1,4 +1,32 @@
-let genki1_content = [
+// Type Declarations
+type ChapterContent = {
+    chapter: string;
+    title: TranslatedContent;
+    vocabulary: VocabContent[];
+    grammar: GrammarContent[];
+};
+
+type GrammarContent = {
+    title: string;
+    meanings: TranslatedContent[];
+    usages: string[];
+    notes: string[];
+    examples: string[];
+};
+
+type TranslatedContent = {
+    english: string;
+    japanese: string;
+};
+
+type VocabContent = {
+    english: string;
+    romaji?: string;
+    kana: string;
+    kanji?: string;
+};
+
+let genki1_content: ChapterContent[] = [
     {
         chapter: "Chapter 1",
         title: {
