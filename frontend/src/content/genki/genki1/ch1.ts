@@ -4,7 +4,7 @@ const content: ChapterContent = {
     chapter: "Chapter 1",
     title: {
         english: "New Friends",
-        japanese: "あたらしいともだち",
+        japanese: { kana: "あたらしいともだち" },
     },
     vocabulary: [
         {
@@ -307,9 +307,9 @@ const content: ChapterContent = {
         {
             title: "XはYです",
             meanings: [
-                { english: "X is/am/are Y.", japanese: "X は Y です." },
-                { english: "As for X, it is Y.", japanese: "X は Y です" },
-                { english: "It is ~", japanese: "~です" },
+                { english: "X is/am/are Y.", japanese: { kana: "X は Y です." } },
+                { english: "As for X, it is Y.", japanese: { kana: "X は Y です" } },
+                { english: "It is ~", japanese: { kana: "~です" } },
             ],
             usages: ["Subject は N/Adj です"],
             notes: [
@@ -319,7 +319,7 @@ const content: ChapterContent = {
         },
         {
             title: "Question Sentences",
-            meanings: [{ english: "~?", japanese: "~か" }],
+            meanings: [{ english: "~?", japanese: { kana: "~か" } }],
             usages: ["Sentence + か"],
             notes: ["It is not customary to write a question mark at the end of question sentence in Japanese"],
             examples: ["Examples to come"],
@@ -327,8 +327,8 @@ const content: ChapterContent = {
         {
             title: "nounのnoun",
             meanings: [
-                { english: "X's Y.", japanese: "X の Y" },
-                { english: "X Y.", japanese: "X の Y" },
+                { english: "X's Y.", japanese: { kana: "X の Y" } },
+                { english: "X Y.", japanese: { kana: "X の Y" } },
             ],
             usages: ["N の N", "Specific Noun の Generic N"],
             notes: ["This phrase acts more or less like one big noun, and it can be put wherever a noun can be used"],

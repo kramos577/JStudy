@@ -4,7 +4,7 @@ const content: ChapterContent = {
     chapter: "Chapter 2",
     title: {
         english: "Shopping",
-        japanese: "かいもの",
+        japanese: { kana: "かいもの" },
     },
     vocabulary: [
         {
@@ -303,10 +303,10 @@ const content: ChapterContent = {
         {
             title: "これ それ あれ どれ",
             meanings: [
-                { english: "This (thing here)", japanese: "これ" },
-                { english: "That (thing by you)", japanese: "それ" },
-                { english: "That (thing over there)", japanese: "あれ" },
-                { english: "Which (thing)", japanese: "どれ" },
+                { english: "This (thing here)", japanese: { kana: "これ" } },
+                { english: "That (thing by you)", japanese: { kana: "それ" } },
+                { english: "That (thing over there)", japanese: { kana: "あれ" } },
+                { english: "Which (thing)", japanese: { kana: "どれ" } },
             ],
             usages: ["これ は 〜", "それ は 〜", "あれ は 〜", "どれ が 〜"],
             notes: [
@@ -317,10 +317,10 @@ const content: ChapterContent = {
         {
             title: "この/その/あの/どの + noun",
             meanings: [
-                { english: "This X (near me)", japanese: "この X" },
-                { english: "That X (near you)", japanese: "その X" },
-                { english: "That X (over there)", japanese: "あの X" },
-                { english: "Which X", japanese: "どの X" },
+                { english: "This X (near me)", japanese: { kana: "この X" } },
+                { english: "That X (near you)", japanese: { kana: "その X" } },
+                { english: "That X (over there)", japanese: { kana: "あの X" } },
+                { english: "Which X", japanese: { kana: "どの X" } },
             ],
             usages: ["この + N", "その + N", "あの + N", "どの + N"],
             notes: [
@@ -332,10 +332,10 @@ const content: ChapterContent = {
         {
             title: "ここ そこ あそこ どこ",
             meanings: [
-                { english: "Here (near me)", japanese: "ここ" },
-                { english: "There (near you)", japanese: "そこ" },
-                { english: "Over there", japanese: "あそこ" },
-                { english: "Where", japanese: "どこ" },
+                { english: "Here (near me)", japanese: { kana: "ここ" } },
+                { english: "There (near you)", japanese: { kana: "そこ" } },
+                { english: "Over there", japanese: { kana: "あそこ" } },
+                { english: "Where", japanese: { kana: "どこ" } },
             ],
             usages: ["~ ここ ~", "~ そこ ~", "~ あそこ ~", "~ どこ ~"],
             notes: [],
@@ -343,7 +343,7 @@ const content: ChapterContent = {
         },
         {
             title: "だれのnoun",
-            meanings: [{ english: "Whose X", japanese: "だれ の X" }],
+            meanings: [{ english: "Whose X", japanese: { kana: "だれ の X" } }],
             usages: ["だれ の N"],
             notes: [],
             examples: ["Examples to come"],
@@ -351,8 +351,8 @@ const content: ChapterContent = {
         {
             title: "nounも",
             meanings: [
-                { english: "B too is X", japanese: "B も X です" },
-                { english: "B is X also", japanese: "B も X です" },
+                { english: "B too is X", japanese: { kana: "B も X です" } },
+                { english: "B is X also", japanese: { kana: "B も X です" } },
             ],
             usages: ["B も shared property です"],
             notes: [
@@ -364,9 +364,9 @@ const content: ChapterContent = {
         {
             title: "nounじゃないです",
             meanings: [
-                { english: "X is not Y", japanese: "X は Y じゃないです" },
-                { english: "X is not Y", japanese: "X は Y じゃありません" },
-                { english: "X is not Y", japanese: "X は Y ではありません" },
+                { english: "X is not Y", japanese: { kana: "X は Y じゃないです" } },
+                { english: "X is not Y", japanese: { kana: "X は Y じゃありません" } },
+                { english: "X is not Y", japanese: { kana: "X は Y ではありません" } },
             ],
             usages: ["Subject は N じゃないです", "Subject は N じゃありません", "Subject は N ではありません"],
             notes: [
@@ -378,8 +378,8 @@ const content: ChapterContent = {
         {
             title: "〜ね/〜よ",
             meanings: [
-                { english: "~ right?", japanese: "〜ね" },
-                { english: "~ I tell you", japanese: "〜よ" },
+                { english: "~ right?", japanese: { kana: "〜ね" } },
+                { english: "~ I tell you", japanese: { kana: "〜よ" } },
             ],
             usages: ["Sentence + ね", "Sentence + よ"],
             notes: [

@@ -1,8 +1,9 @@
 import { Box, Card, CardContent, Grid, Toolbar, Typography } from "@mui/material";
 import contentCh1 from "../content/genki/genki1/ch1";
 import contentCh2 from "../content/genki/genki1/ch2";
+import contentCh3 from "../content/genki/genki1/ch3";
 
-const contentGenki1 = [contentCh1, contentCh2];
+const contentGenki1 = [contentCh1, contentCh2, contentCh3];
 
 function Genki1Study() {
     return (
@@ -15,7 +16,7 @@ function Genki1Study() {
                             {x.chapter}
                         </Typography>
                         <Typography variant="h4" align="left" sx={{ color: "#AC80AF" }}>
-                            {x.title.japanese} - {x.title.english}
+                            {x.title.japanese.kanji || x.title.japanese.kana} - {x.title.english}
                         </Typography>
                         <Box mt={3}>
                             <Typography variant="h5" align="left" sx={{ color: "#534D8A" }}>
@@ -53,7 +54,7 @@ function Genki1Study() {
 
                                                     {y.meanings.map((z) => (
                                                         <Typography variant="subtitle1" align="left">
-                                                            {z.japanese} - {z.english}
+                                                            {z.japanese.kanji || z.japanese.kana} - {z.english}
                                                         </Typography>
                                                     ))}
 

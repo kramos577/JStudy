@@ -14,9 +14,14 @@ export type GrammarContent = {
     examples: string[];
 };
 
+export type JapaneseContent = {
+    kana: string;
+    kanji?: string;
+};
+
 export type TranslatedContent = {
     english: string;
-    japanese: string;
+    japanese: JapaneseContent;
 };
 
 export type VocabContent = {
