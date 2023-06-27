@@ -4,6 +4,15 @@ export type ChapterContent = {
     title: TranslatedContent;
     vocabulary: VocabContent[];
     grammar: GrammarContent[];
+    isEarly: false;
+};
+
+export type EarlyChapterContent = {
+    chapter: string;
+    title: TranslatedContent;
+    vocabulary: EarlyVocabContent[];
+    grammar: GrammarContent[];
+    isEarly: true;
 };
 
 export type GrammarContent = {
@@ -16,7 +25,7 @@ export type GrammarContent = {
 
 export type JapaneseContent = {
     kana: string;
-    kanji?: string;
+    japanese?: string;
 };
 
 export type TranslatedContent = {
@@ -26,7 +35,12 @@ export type TranslatedContent = {
 
 export type VocabContent = {
     english: string;
-    romaji?: string;
     kana: string;
-    kanji?: string;
+    japanese: string;
+};
+
+export type EarlyVocabContent = {
+    english: string;
+    kana: string;
+    romaji: string;
 };
