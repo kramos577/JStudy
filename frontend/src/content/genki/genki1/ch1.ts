@@ -1,7 +1,8 @@
-import { ChapterContent } from "../types";
+import { EarlyChapterContent } from "../types";
 
-const content: ChapterContent = {
+const content: EarlyChapterContent = {
     chapter: "Chapter 1",
+    isEarly: true,
     title: {
         english: "New Friends",
         japanese: { kana: "あたらしいともだち" },
