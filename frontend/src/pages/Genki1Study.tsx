@@ -17,9 +17,9 @@ function Genki1Study() {
                             {x.chapter}
                         </Typography>
                         <Typography variant="h4" align="left" sx={{ color: "#AC80AF" }}>
-                            {x.title.japanese.kanji || x.title.japanese.kana} - {x.title.english}
+                            {x.title.japanese.japanese || x.title.japanese.kana} - {x.title.english}
                         </Typography>
-                        <Vocab vocabList={x.vocabulary}></Vocab>
+                        <Vocab chapterContent={x} />
                         <Box mt={8}>
                             <Typography variant="h5" align="left" mb={1} sx={{ color: "#534D8A" }}>
                                 Grammar
@@ -37,7 +37,7 @@ function Genki1Study() {
 
                                                     {y.meanings.map((z) => (
                                                         <Typography variant="subtitle1" align="left">
-                                                            {z.japanese.kanji || z.japanese.kana} - {z.english}
+                                                            {z.japanese.japanese || z.japanese.kana} - {z.english}
                                                         </Typography>
                                                     ))}
 
