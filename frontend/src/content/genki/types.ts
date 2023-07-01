@@ -21,6 +21,7 @@ export type GrammarContent = {
     usages: string[];
     notes: string[];
     examples: string[];
+    conjugations?: ConjugationContent;
 };
 
 export type JapaneseContent = {
@@ -43,4 +44,10 @@ export type EarlyVocabContent = {
     english: string;
     kana: string;
     romaji: string;
+};
+
+export type ConjugationContent = {
+    columnNames: string[];
+    rowNames: string[];
+    rowData: string[][];
 };
