@@ -17,7 +17,7 @@ import ListItemText from "@mui/material/ListItemText";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 import Toolbar from "@mui/material/Toolbar";
 
-const drawerWidth = 200;
+const drawerWidth = "15%";
 
 function Navbar() {
     const [openBookTab, setOpenBookTab] = React.useState(true);
