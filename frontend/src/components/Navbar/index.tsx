@@ -57,74 +57,56 @@ function Navbar() {
                     </ListItem>
 
                     <ListItem key="genki" disablePadding>
-                        <ListItemButton>
+                        <ListItemButton component={Link} to="/genki">
                             <ListItemIcon>
                                 <TagFacesIcon />
                             </ListItemIcon>
-                            <ListItemText
-                                primary={
-                                    <Link to="/genki" style={{ textDecoration: "none", color: "black" }}>
-                                        Genki
-                                    </Link>
-                                }
-                            />
+                            <ListItemText primary="Genki" />
                             {openBookTab ? (
-                                <ExpandLess onClick={handleBookClick} />
+                                <ExpandLess sx={{ borderLeft: 0.5 }} onClick={handleBookClick} />
                             ) : (
-                                <ExpandMore onClick={handleBookClick} />
+                                <ExpandMore sx={{ borderLeft: 0.5 }} onClick={handleBookClick} />
                             )}
                         </ListItemButton>
                     </ListItem>
 
                     <Collapse in={openBookTab} timeout="auto" unmountOnExit>
-                        <List component="div" disablePadding>
+                        <List
+                            component={Link}
+                            to="/genki/1"
+                            disablePadding
+                            style={{ textDecoration: "none", color: "black" }}>
                             <ListItemButton sx={{ pl: 4 }}>
                                 <ListItemIcon>
                                     <BookIcon />
                                 </ListItemIcon>
-                                <ListItemText
-                                    primary={
-                                        <Link to="/genki/1" style={{ textDecoration: "none", color: "black" }}>
-                                            Genki I
-                                        </Link>
-                                    }
-                                />
+                                <ListItemText primary="Genki I" />
                                 {openChapterTab ? (
-                                    <ExpandLess onClick={handleChapterClick} />
+                                    <ExpandLess sx={{ borderLeft: 0.5 }} onClick={handleChapterClick} />
                                 ) : (
-                                    <ExpandMore onClick={handleChapterClick} />
+                                    <ExpandMore sx={{ borderLeft: 0.5 }} onClick={handleChapterClick} />
                                 )}
                             </ListItemButton>
                         </List>
                         <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
-                            <List component="div" disablePadding>
+                            <List
+                                component={Link}
+                                to="/genki/1/study"
+                                disablePadding
+                                style={{ textDecoration: "none", color: "black" }}>
                                 <ListItemButton sx={{ pl: 8 }}>
-                                    <ListItemText
-                                        primary={
-                                            // Link to content page and correct section there
-                                            <Link
-                                                to="/genki/1/study"
-                                                style={{ textDecoration: "none", color: "black" }}>
-                                                Chapter 1
-                                            </Link>
-                                        }
-                                    />
+                                    <ListItemText primary="Chapter 1" />
                                 </ListItemButton>
                             </List>
                         </Collapse>
                         <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
-                            <List component="div" disablePadding>
+                            <List
+                                component={Link}
+                                to="/genki/1/study"
+                                disablePadding
+                                style={{ textDecoration: "none", color: "black" }}>
                                 <ListItemButton sx={{ pl: 8 }}>
-                                    <ListItemText
-                                        primary={
-                                            // Link to content page and correct section there
-                                            <Link
-                                                to="/genki/1/study"
-                                                style={{ textDecoration: "none", color: "black" }}>
-                                                Chapter 2
-                                            </Link>
-                                        }
-                                    />
+                                    <ListItemText primary="Chapter 2" />
                                 </ListItemButton>
                             </List>
                         </Collapse>
