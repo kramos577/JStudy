@@ -16,6 +16,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 import Toolbar from "@mui/material/Toolbar";
+import { HashLink } from "react-router-hash-link";
 
 const drawerWidth = "15%";
 
@@ -88,10 +89,11 @@ function Navbar() {
                                 )}
                             </ListItemButton>
                         </List>
+
                         <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
                             <List
-                                component={Link}
-                                to="/genki/1/study"
+                                component={HashLink}
+                                to="/genki/1/study#chapter1"
                                 disablePadding
                                 style={{ textDecoration: "none", color: "black" }}>
                                 <ListItemButton sx={{ pl: 8 }}>
@@ -99,14 +101,27 @@ function Navbar() {
                                 </ListItemButton>
                             </List>
                         </Collapse>
+
                         <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
                             <List
-                                component={Link}
-                                to="/genki/1/study"
+                                component={HashLink}
+                                to="/genki/1/study#chapter2"
                                 disablePadding
                                 style={{ textDecoration: "none", color: "black" }}>
                                 <ListItemButton sx={{ pl: 8 }}>
                                     <ListItemText primary="Chapter 2" />
+                                </ListItemButton>
+                            </List>
+                        </Collapse>
+
+                        <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
+                            <List
+                                component={HashLink}
+                                to="/genki/1/study#chapter3"
+                                disablePadding
+                                style={{ textDecoration: "none", color: "black" }}>
+                                <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemText primary="Chapter 3" />
                                 </ListItemButton>
                             </List>
                         </Collapse>

@@ -13,16 +13,18 @@ function Genki1Study() {
             <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
                 <Toolbar />
                 {contentGenki1.map((x) => (
-                    <Box ml={25}>
-                        <Typography variant="h3" align="left" sx={{ color: "#534D8A" }}>
-                            {x.chapter}
-                        </Typography>
-                        <Typography variant="h4" align="left" sx={{ color: "#AC80AF" }}>
-                            {x.title.japanese.japanese || x.title.japanese.kana} - {x.title.english}
-                        </Typography>
-                        <Vocab chapterContent={x} />
-                        <Grammar grammarContent={x.grammar} />
-                    </Box>
+                    <section id={x.chapter.toLowerCase().replaceAll(" ", "")}>
+                        <Box ml={25}>
+                            <Typography variant="h3" align="left" sx={{ color: "#534D8A" }}>
+                                {x.chapter}
+                            </Typography>
+                            <Typography variant="h4" align="left" sx={{ color: "#AC80AF" }}>
+                                {x.title.japanese.japanese || x.title.japanese.kana} - {x.title.english}
+                            </Typography>
+                            <Vocab chapterContent={x} />
+                            <Grammar grammarContent={x.grammar} />
+                        </Box>
+                    </section>
                 ))}
             </Box>
         </div>
