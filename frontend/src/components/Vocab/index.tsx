@@ -27,18 +27,18 @@ const getCommonCardContent = (
     // Don't need a default because TS knows that all cases are covered or not because of the intersection above
     switch (studyLanguage) {
         case "e2k":
-            return <FlipCard front={vocabContent.english} back={vocabContent.kana} />;
+            return <FlipCard front={vocabContent.english} back={vocabContent.kana} studyLanguage={studyLanguage} />;
         case "k2e":
-            return <FlipCard front={vocabContent.kana} back={vocabContent.english} />;
+            return <FlipCard front={vocabContent.kana} back={vocabContent.english} studyLanguage={studyLanguage} />;
     }
 };
 
 const getEarlyCardContent = (studyLanguage: EarlyStudyLanguage, vocabContent: EarlyVocabContent) => {
     switch (studyLanguage) {
         case "e2r":
-            return <FlipCard front={vocabContent.english} back={vocabContent.romaji} />;
+            return <FlipCard front={vocabContent.english} back={vocabContent.romaji} studyLanguage={studyLanguage} />;
         case "r2e":
-            return <FlipCard front={vocabContent.romaji} back={vocabContent.english} />;
+            return <FlipCard front={vocabContent.romaji} back={vocabContent.english} studyLanguage={studyLanguage} />;
         default:
             return getCommonCardContent(studyLanguage, vocabContent);
     }
@@ -46,9 +46,9 @@ const getEarlyCardContent = (studyLanguage: EarlyStudyLanguage, vocabContent: Ea
 const getCardContent = (studyLanguage: StudyLanguage, vocabContent: VocabContent) => {
     switch (studyLanguage) {
         case "e2j":
-            return <FlipCard front={vocabContent.english} back={vocabContent.japanese} />;
+            return <FlipCard front={vocabContent.english} back={vocabContent.japanese} studyLanguage={studyLanguage} />;
         case "j2e":
-            return <FlipCard front={vocabContent.japanese} back={vocabContent.english} />;
+            return <FlipCard front={vocabContent.japanese} back={vocabContent.english} studyLanguage={studyLanguage} />;
         default:
             return getCommonCardContent(studyLanguage, vocabContent);
     }
