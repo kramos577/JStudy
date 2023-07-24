@@ -12,19 +12,27 @@ function Grammar({ grammarContent }: { grammarContent: GrammarContent[] }) {
                     <Grid item sx={{ width: "95%" }}>
                         <Card variant="outlined">
                             <CardContent>
-                                <Typography variant="h6" align="left">
+                                <Typography fontSize={20} align="left">
                                     {y.title}
-                                    <Typography variant="subtitle1" align="left" mt={0.5}>
+                                    <Typography
+                                        fontSize={17}
+                                        align="left"
+                                        mt={0.5}
+                                        sx={{ textDecoration: "underline" }}>
                                         Meanings:{"\n"}
                                     </Typography>
 
                                     {y.meanings.map((z) => (
                                         <Typography variant="subtitle1" align="left">
-                                            {z.japanese.japanese || z.japanese.kana} - {z.english}
+                                            {z.japanese.japanese || z.japanese.kana} = {z.english}
                                         </Typography>
                                     ))}
 
-                                    <Typography variant="subtitle1" align="left" mt={1.5}>
+                                    <Typography
+                                        variant="subtitle1"
+                                        align="left"
+                                        mt={1.5}
+                                        sx={{ textDecoration: "underline" }}>
                                         How to Use:{"\n"}
                                     </Typography>
 
@@ -34,7 +42,11 @@ function Grammar({ grammarContent }: { grammarContent: GrammarContent[] }) {
                                         </Typography>
                                     ))}
 
-                                    <Typography variant="subtitle1" align="left" mt={1.5}>
+                                    <Typography
+                                        variant="subtitle1"
+                                        align="left"
+                                        mt={1.5}
+                                        sx={{ textDecoration: "underline" }}>
                                         Notes:{"\n"}
                                     </Typography>
 
@@ -44,7 +56,11 @@ function Grammar({ grammarContent }: { grammarContent: GrammarContent[] }) {
                                         </Typography>
                                     ))}
 
-                                    <Typography variant="subtitle1" align="left" mt={1.5}>
+                                    <Typography
+                                        variant="subtitle1"
+                                        align="left"
+                                        mt={1.5}
+                                        sx={{ textDecoration: "underline" }}>
                                         Examples:{"\n"}
                                     </Typography>
 
