@@ -10,7 +10,7 @@ const contentGenki1 = [contentCh1, contentCh2, contentCh3];
 function Genki1Study() {
     return (
         <div>
-            <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+            <Box component="main" sx={{ flexGrow: 1, ml: 6, mt: 2 }}>
                 <Toolbar />
                 {contentGenki1.map((x) => (
                     <section id={x.chapter.toLowerCase().replaceAll(" ", "")}>
