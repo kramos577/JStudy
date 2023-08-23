@@ -2,10 +2,11 @@ import { Box, Toolbar, Typography } from "@mui/material";
 import contentCh1 from "../content/genki/genki1/ch1";
 import contentCh2 from "../content/genki/genki1/ch2";
 import contentCh3 from "../content/genki/genki1/ch3";
+import contentCh4 from "../content/genki/genki1/ch4";
 import Vocab from "../components/Vocab";
 import Grammar from "../components/Grammar";
 
-const contentGenki1 = [contentCh1, contentCh2, contentCh3];
+const contentGenki1 = [contentCh1, contentCh2, contentCh3, contentCh4];
 
 function Genki1Study() {
     return (
