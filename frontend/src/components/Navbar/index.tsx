@@ -4,6 +4,7 @@ import "./style.css";
 
 import BookIcon from "@mui/icons-material/Book";
 import Box from "@mui/material/Box";
+import CasinoIcon from "@mui/icons-material/Casino";
 import { Collapse } from "@mui/material";
 import Drawer from "@mui/material/Drawer";
 import ExpandLess from "@mui/icons-material/ExpandLess";
@@ -54,6 +55,15 @@ function Navbar() {
                                 <HomeIcon />
                             </ListItemIcon>
                             <ListItemText primary="Home" />
+                        </ListItemButton>
+                    </ListItem>
+
+                    <ListItem key="games" disablePadding>
+                        <ListItemButton component={Link} to="/games">
+                            <ListItemIcon>
+                                <CasinoIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Study Games" />
                         </ListItemButton>
                     </ListItem>
 
