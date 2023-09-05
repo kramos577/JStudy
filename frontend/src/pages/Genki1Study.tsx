@@ -5,6 +5,7 @@ import contentCh3 from "../content/genki/genki1/ch3";
 import contentCh4 from "../content/genki/genki1/ch4";
 import Vocab from "../components/Vocab";
 import Grammar from "../components/Grammar";
+import { Link } from "react-router-dom";
 
 const contentGenki1 = [contentCh1, contentCh2, contentCh3, contentCh4];
 
@@ -24,6 +25,11 @@ function Genki1Study() {
                             </Typography>
                             <Vocab chapterContent={x} />
                             <Grammar grammarContent={x.grammar} />
+                            <Link to="/games">
+                                <Typography align="center" variant="h5" mt={5} mb={5}>
+                                    れんしゅうしましょう！
+                                </Typography>
+                            </Link>
                         </Box>
                     </section>
                 ))}

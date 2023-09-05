@@ -75,9 +75,6 @@ function Grammar({ grammarContent }: { grammarContent: GrammarContent[] }) {
                     </Grid>
                 ))}
             </Grid>
-            <Typography align="center" variant="h5" mt={5} mb={5}>
-                れんしゅうしましょう！
-            </Typography>
         </Box>
     );
 }
