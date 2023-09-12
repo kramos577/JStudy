@@ -286,10 +286,72 @@ const content: ChapterContent = {
     ],
     grammar: [
         {
-            title: "",
-            meanings: [{ english: "", japanese: { kana: "" } }],
-            usages: [""],
+            title: "Adjectives",
+            conjugations: {
+                columnNames: ["-adjectives", "-adjectives", "irregular adjectives"],
+                rowNames: ["present", "present negative", "past", "past negative"],
+                rowData: [
+                    ["さむいです。", "げんきです。", "いいです。"],
+                    ["さむくないです。", "げんきじゃないです。", "よくないです。"],
+                    ["さむかったです。", "げんきでした", "よかったです。"],
+                    ["さむくなかったです", "げんきじゃなかったです。", "よくなかったです。"],
+                ],
+            },
+            meanings: [
+                { english: "It is cold.", japanese: { kana: "さむいです。" } },
+                { english: "It is not cold.", japanese: { kana: "さむくないです。" } },
+                { english: "It was cold.", japanese: { kana: "さむかったです。" } },
+                { english: "It was not cold.", japanese: { kana: "さむくなかったです" } },
+            ],
+            usages: [
+                "Present adjective + です",
+                "い adjective without final い + くないです",
+                "な adjective + ないです",
+                "い adjective without final い + かったです",
+                "な adjective + でした",
+                "い adjective without final い + くなかったです",
+                "な adjective + じゃなかったです",
+            ],
+            notes: [
+                "Adjectives conjugate like verbs do.",
+                "In the negative for い adjectives, you can use the more colloquial variant ないです, or the more conservative variant ありません. For な adjectives, you can use じゃありません or ではありません and its past tense counterparts.",
+                "The first syllable of いい is changed to よ in all forms except the dictionary form. There actually are alternate forms, よい and よいです, but they are used much less frequently than いい in spoken language.",
+            ],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "好き（な)/きらい（な）",
+            meanings: [
+                { english: "X likes Y", japanese: { kana: "XはYがすきです。" } },
+                { english: "X dislikes Y", japanese: { kana: "XはYがきらいです。" } },
+            ],
+            usages: ["Person は person/thing が すき/きらい です。"],
+            notes: [
+                "When the item that is liked a person, すきです is usually taken to be an admission of one's romantic interest. In the expression of romantic or familial affection, the complex particle のことが can replace が.",
+                "If you like/dislike something very much, it is more common to use the intensified versions of those words, だいすき and だいきらい, than to use とても.",
+                "When Japanese people want to say they neither like nor dislike something, they usually say すきでもきらいでもないです。",
+                "すき and きらい can be used to modify nouns like any other adjective, but, since these are な adjectives, the な must go after the adjective and before the modified noun.",
+            ],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "〜ましょう/〜ましょうか",
+            meanings: [
+                { english: "Let's ~", japanese: { kana: "〜ましょう" } },
+                { english: "Shall we ~?", japanese: { kana: "〜ましょうか" } },
+            ],
+            usages: ["Vstem + 〜ましょう/〜ましょうか"],
             notes: [""],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "Counting",
+            meanings: [{ english: "Number Items", japanese: { kana: "Items Number" } }],
+            usages: ["item + number"],
+            notes: [
+                "There are different number words for different kinds of items, for example the words for people, books, and pieces of paper.",
+                "Number words often come after, rather than before, the items counted in a sentence",
+            ],
             examples: ["Examples to come"],
         },
     ],
