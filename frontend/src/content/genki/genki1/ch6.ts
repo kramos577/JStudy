@@ -266,10 +266,104 @@ const content: ChapterContent = {
     ],
     grammar: [
         {
-            title: "",
-            meanings: [{ english: "", japanese: { kana: "" } }],
-            usages: [""],
+            title: "Te-form",
+            conjugations: {
+                columnNames: [
+                    "ru-verbs",
+                    "u-verbs with final う, つ, る",
+                    "u-verbs with final む, ぶ, ぬ",
+                    "u-verbs with final く",
+                    "u-verbs with final ぐ",
+                    "u-verbs with final す",
+                    "irregular verbs",
+                ],
+                rowNames: ["conjugations"],
+                rowData: [
+                    ["たべる → たべて"],
+                    ["あう → あって\nまつ → 待って\nとる → とって"],
+                    ["よむ → よんで\nあそぶ → あそんで\nしぬ → しんで"],
+                    ["かく → かいて"],
+                    ["およぐ → およいで"],
+                    ["はなす → はなして"],
+                    ["する → して\nくる→きて"],
+                ],
+            },
+            meanings: [
+                {
+                    english:
+                        "There are various meanings when using the te-form. It all depends on how it is being used.",
+                    japanese: { kana: "" },
+                },
+            ],
+            usages: [
+                "ru-verbs stem + て",
+                "u-verbs with final う, つ, or る - final う + って",
+                "u-verbs with final む, ぶ, or ぬ - last character + んで",
+                "u-verbs with final く - final く + いて",
+                "u-verbs with final ぐ - final ぐ + いで",
+                "u-verbs with final す - final す + して",
+            ],
+            notes: [
+                "The te-form is used very often in Japanese grammar.",
+                "行く is an important exception. It conjugates to 行って.",
+                "Remember that the te-forms and verb stems are totally different constructs in the u-verb camp.",
+                "It is probably easier to learn each verb as a set, as 書く→書きます→書いて",
+            ],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "〜てください",
+            meanings: [{ english: "Please do ~ for me.", japanese: { kana: "〜てください" } }],
+            usages: ["Vte form + ください"],
+            notes: [
+                "If you're talking to a very close friend or a member of your family, the te-form by itself can be used as a request.",
+            ],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "〜てもいいです",
+            meanings: [
+                { english: "You may do ~", japanese: { kana: "〜てもいいです" } },
+                { english: "May I do ~ ?", japanese: { kana: "〜てもいいですか" } },
+            ],
+            usages: ["Vte form + もいいです", "Vte form + もいいですか"],
             notes: [""],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "〜てはいけません",
+            meanings: [{ english: "You must not do ~", japanese: { kana: "〜てはいけません" } }],
+            usages: ["Vte form + はいけません"],
+            notes: [
+                "If someone asks you for permission and if you want deny it, you can use てはいけません, but the sentence may sound too harsh unless you are in a place of authority.",
+            ],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "Describing Two Activities",
+            meanings: [{ english: "To X and Y", japanese: { kana: "X(てform)、Y" } }],
+            usages: ["Vte form, V"],
+            notes: [
+                "You can use the te-form if you want to combine two or more verbs, as in describing a sequence of events or actions. It basically does the work of 'and' with other verbs.",
+                "Two verbs cannot be joined by と which only connects nouns",
+                "The tense of the verb at the end of the sentence determines when the events took place: past, present, or future.",
+            ],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "〜から",
+            meanings: [{ english: "Because X, Y", japanese: { kana: "Xから、Y" } }],
+            usages: ["explanation + から, situation"],
+            notes: ["The clauses may also be switched. 'Y. Xから.' is also valid."],
+            examples: ["Examples to come"],
+        },
+        {
+            title: "〜ましょうか",
+            meanings: [{ english: "Shall I ~", japanese: { kana: "〜ましょうか" } }],
+            usages: ["Vstem + ましょうか"],
+            notes: [
+                "While ましょうか is also used to say 'Let us X', ましょうか can be used to offer your assistance in this case.",
+            ],
             examples: ["Examples to come"],
         },
     ],
