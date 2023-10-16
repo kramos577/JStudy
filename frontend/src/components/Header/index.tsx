@@ -3,6 +3,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import redDaruma from "../../static/daruma/daruma_red.png";
 import BugReportIcon from "@mui/icons-material/BugReport";
+import DrawIcon from "@mui/icons-material/Draw";
 import { Link } from "react-router-dom";
 import { Tooltip } from "@mui/material";
 
@@ -23,10 +24,23 @@ function Header() {
                     JStudy
                 </Typography>
 
+                <Tooltip title="Checkout the artist who creates all the artwork you see here!" placement="bottom">
+                    <a rel="noopener noreferrer" href="https://kiwikiwi.carrd.co/" target="_blank">
+                        <DrawIcon
+                            sx={{
+                                color: "#ce93d8",
+                                width: 28,
+                                height: 28,
+                                mr: 1,
+                            }}
+                        />
+                    </a>
+                </Tooltip>
+
                 {/* From StackOverflow: Use the rel=”noopener” or rel=”noreferrer” link attributes for every link. 
                 The rel=”noreferrer” link attribute also functions the same as the “noopener” link attribute in that it prevents 
                 the linked site from taking control of the linking site. */}
-                <Tooltip title="Find a bug or typo? Open an issue to get it fixed!" placement="bottom">
+                <Tooltip title="Found a bug or typo? Open an issue to get it fixed!" placement="bottom">
                     <a rel="noopener noreferrer" href="https://github.com/kramos577/JStudy/issues" target="_blank">
                         <BugReportIcon
                             sx={{
