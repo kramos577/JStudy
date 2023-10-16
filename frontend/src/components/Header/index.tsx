@@ -13,7 +13,7 @@ const style = {
 
 function Header() {
     return (
-        <AppBar position="static" sx={{ ...style, zIndex: (theme) => theme.zIndex.drawer + 1, display: "flex" }}>
+        <AppBar position="fixed" sx={{ ...style, zIndex: (theme) => theme.zIndex.drawer + 1, display: "flex" }}>
             <Toolbar>
                 <Link to="/">
                     <img src={redDaruma} alt="daruma logo" width={40} height={40} />
