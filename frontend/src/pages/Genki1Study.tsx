@@ -5,11 +5,12 @@ import contentCh3 from "../content/genki/genki1/ch3";
 import contentCh4 from "../content/genki/genki1/ch4";
 import contentCh5 from "../content/genki/genki1/ch5";
 import contentCh6 from "../content/genki/genki1/ch6";
+import contentCh7 from "../content/genki/genki1/ch7";
 import Vocab from "../components/Vocab";
 import Grammar from "../components/Grammar";
 import { Link } from "react-router-dom";
 
-const contentGenki1 = [contentCh1, contentCh2, contentCh3, contentCh4, contentCh5, contentCh6];
+const contentGenki1 = [contentCh1, contentCh2, contentCh3, contentCh4, contentCh5, contentCh6, contentCh7];
 
 function Genki1Study() {
     return (

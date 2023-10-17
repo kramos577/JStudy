@@ -171,6 +171,18 @@ function Navbar() {
                                 </ListItemButton>
                             </List>
                         </Collapse>
+
+                        <Collapse in={openChapterTab} timeout="auto" unmountOnExit>
+                            <List
+                                component={HashLink}
+                                to="/genki/1/study#chapter7"
+                                disablePadding
+                                style={{ textDecoration: "none", color: "black" }}>
+                                <ListItemButton sx={{ pl: 8 }}>
+                                    <ListItemText primary="Chapter 7" />
+                                </ListItemButton>
+                            </List>
+                        </Collapse>
                     </Collapse>
 
                     <Collapse in={openBookTab} timeout="auto" unmountOnExit>
