@@ -1,4 +1,5 @@
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, Button, Grid, Toolbar, Typography } from "@mui/material";
+import orangeDaruma from "../static/daruma/daruma_orange.png";
 
 function Genki() {
     return (
@@ -11,7 +12,24 @@ function Genki() {
                     examples than what are found in the textbooks. If you would like to purchase them, you can easily
                     find the textbooks on the web, both physical and digital copies.
                 </Typography>
+                <img src={orangeDaruma} alt="neko logo" width={150} height={150} />
             </Box>
+            <Grid
+                container
+                component="main"
+                spacing={2}
+                sx={{ width: "85%", float: "right", justifyContent: "center" }}>
+                <Grid item>
+                    <Button variant="contained" size="large" href="genki/1">
+                        Genki 1
+                    </Button>
+                </Grid>
+                <Grid item>
+                    <Button variant="contained" size="large" href="genki/2">
+                        Genki 2
+                    </Button>
+                </Grid>
+            </Grid>
         </div>
     );
 }
