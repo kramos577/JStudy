@@ -4,7 +4,7 @@ import orangeDaruma from "../static/daruma/daruma_orange.png";
 function Genki() {
     return (
         <div>
-            <Box component="main" sx={{ width: "85%", float: "right" }}>
+            <Box>
                 <Toolbar />
                 <Typography paragraph sx={{ marginTop: 3, marginLeft: 2, marginRight: 5 }}>
                     Let's study Genki! These Genki study pages are not meant to replace the Genki textbooks but to be
@@ -14,11 +14,7 @@ function Genki() {
                 </Typography>
                 <img src={orangeDaruma} alt="neko logo" width={150} height={150} />
             </Box>
-            <Grid
-                container
-                component="main"
-                spacing={2}
-                sx={{ width: "85%", float: "right", justifyContent: "center" }}>
+            <Grid container component="main" spacing={2} sx={{ justifyContent: "center" }}>
                 <Grid item>
                     <Button variant="contained" size="large" href="genki/1">
                         Genki 1

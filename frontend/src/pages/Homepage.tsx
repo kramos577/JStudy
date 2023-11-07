@@ -4,7 +4,7 @@ import blueNeko from "../static/neko/neko_blue.png";
 function Homepage() {
     return (
         <div>
-            <Box component="main" sx={{ width: "85%", float: "right" }}>
+            <Box component="main">
                 <Toolbar />
                 <Typography variant="h2" sx={{ marginTop: 3, fontWeight: "bold" }}>
                     ようこそ！

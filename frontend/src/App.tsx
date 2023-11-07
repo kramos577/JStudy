@@ -21,16 +21,17 @@ function App() {
                 <Box sx={{ display: "flex" }}>
                     <Header />
                     <Navbar />
-                </Box>
-                <Routes>
-                    <Route path="/" element={<Homepage />} />
 
-                    <Route path="/genki" element={<Genki />} />
-                    <Route path="/genki/1" element={<Genki1 />} />
-                    <Route path="/genki/2" element={<Genki2 />} />
-                    <Route path="/genki/1/study" element={<Genki1Study />} />
-                    <Route path="/games" element={<Games />} />
-                </Routes>
+                    <Routes>
+                        <Route path="/" element={<Homepage />} />
+
+                        <Route path="/genki" element={<Genki />} />
+                        <Route path="/genki/1" element={<Genki1 />} />
+                        <Route path="/genki/2" element={<Genki2 />} />
+                        <Route path="/genki/1/study" element={<Genki1Study />} />
+                        <Route path="/games" element={<Games />} />
+                    </Routes>
+                </Box>
             </BrowserRouter>
         </div>
     );

@@ -3,7 +3,7 @@ import { Box, Toolbar, Typography } from "@mui/material";
 function Genki1() {
     return (
         <div>
-            <Box component="main" sx={{ width: "85%", float: "right" }}>
+            <Box>
                 <Toolbar />
                 <Typography paragraph sx={{ marginTop: 3, marginLeft: 2, marginRight: 5 }}>
                     Let's study Genki I! The Genki I study page is not meant to replace the textbook but to be used in

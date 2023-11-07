@@ -14,30 +14,28 @@ const contentGenki1 = [contentCh1, contentCh2, contentCh3, contentCh4, contentCh
 
 function Genki1Study() {
     return (
-        <div>
-            <Box component="main" sx={{ flexGrow: 1, ml: 6, mt: 2 }}>
-                <Toolbar />
-                {contentGenki1.map((x) => (
-                    <section id={x.chapter.toLowerCase().replaceAll(" ", "")}>
-                        <Box ml={25}>
-                            <Typography variant="h3" align="left" sx={{ color: "#534D8A" }}>
-                                {x.chapter}
+        <Box component="main" sx={{ flexGrow: 1, mt: 2 }}>
+            <Toolbar />
+            {contentGenki1.map((x) => (
+                <section id={x.chapter.toLowerCase().replaceAll(" ", "")}>
+                    <Box ml={3} mr={3}>
+                        <Typography variant="h3" align="left" sx={{ color: "#534D8A" }}>
+                            {x.chapter}
+                        </Typography>
+                        <Typography variant="h4" align="left" sx={{ color: "#AC80AF" }}>
+                            {x.title.japanese.japanese || x.title.japanese.kana} - {x.title.english}
+                        </Typography>
+                        <Vocab chapterContent={x} />
+                        <Grammar grammarContent={x.grammar} />
+                        <Link to="/games">
+                            <Typography align="center" variant="h5" mt={5} mb={5}>
+                                れんしゅうしましょう！
                             </Typography>
-                            <Typography variant="h4" align="left" sx={{ color: "#AC80AF" }}>
-                                {x.title.japanese.japanese || x.title.japanese.kana} - {x.title.english}
-                            </Typography>
-                            <Vocab chapterContent={x} />
-                            <Grammar grammarContent={x.grammar} />
-                            <Link to="/games">
-                                <Typography align="center" variant="h5" mt={5} mb={5}>
-                                    れんしゅうしましょう！
-                                </Typography>
-                            </Link>
-                        </Box>
-                    </section>
-                ))}
-            </Box>
-        </div>
+                        </Link>
+                    </Box>
+                </section>
+            ))}
+        </Box>
     );
 }
 

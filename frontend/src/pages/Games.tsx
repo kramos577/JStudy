@@ -7,13 +7,13 @@ const GAME_NAMES = ["Flash Cards", "Crosswords", "Scrabble", "Hangman", "Matchin
 function Games() {
     return (
         <div>
-            <Box component="main" sx={{ width: "85%", float: "right" }}>
+            <Box>
                 <Toolbar />
                 <Typography paragraph sx={{ marginTop: 3, marginLeft: 2, marginRight: 5 }}>
                     Let's study Japanese through games!
                 </Typography>
             </Box>
-            <Grid container spacing={2} sx={{ width: "82%", float: "right" }}>
+            <Grid container spacing={2} sx={{ justifyContent: "center" }}>
                 {GAME_NAMES.map((gameName) => (
                     <Grid item>
                         {/* Add card actions once a game is working */}
