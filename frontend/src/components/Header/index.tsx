@@ -20,7 +20,12 @@ function Header() {
                 </Link>
 
                 {/* flexGrow 1 will fill in all the space between the components it's in */}
-                <Typography variant="h6" noWrap component="div" sx={{ ml: 1, flexGrow: 1, textAlign: "left" }}>
+                <Typography
+                    variant="h6"
+                    noWrap
+                    component={Link}
+                    to="/"
+                    sx={{ ml: 1, flexGrow: 1, textAlign: "left", textDecoration: "none", color: "white" }}>
                     JStudy
                 </Typography>
 
